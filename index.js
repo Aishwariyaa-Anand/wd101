@@ -31,9 +31,9 @@ const showdetails =()=>{
     const tableentries = det.map((entry)=>{
         const nameCell = `<td>${entry.name}</td>`;
         const emailCell = `<td>${entry.email}</td>`;
-        const passCell = `<td>${entry.pw}</td>`;
-        const dobCell = `<td>${entry.db}</td>`;
-        const acceptTermsCell = `<td>${entry.ch}</td>`;
+        const passCell = `<td>${entry.pass}</td>`;
+        const dobCell = `<td>${entry.dob_}</td>`;
+        const acceptTermsCell = `<td>${entry.check}</td>`;
         const row = `<tr>${nameCell} ${emailCell} ${passCell} ${dobCell} ${acceptTermsCell}</tr>`;
         return row;
     }).join("\n");
